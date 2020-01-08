@@ -23,7 +23,7 @@
 		"prettier"
 	],
 	"rules": {
-		"no-unused-vars": "warn",
+		"no-unused-vars": "off",
 		"no-constant-condition": "warn",
 		"no-empty": "warn",
 		"consistent-return": "error",
