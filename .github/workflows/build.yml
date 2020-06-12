@@ -96,9 +96,9 @@ jobs:
 
       - run: |
           PKG_VERSION=$(npx @siliconjungles/rn-scripts get_version_name)
-          BUILD_NO=$GITHUB_RUN_ID
+          BUILD_NO=$GITHUB_RUN_NUMBER
           VERSION=$PKG_VERSION-next.$BUILD_NO
-          npm version $VERSION
+          npm version $VERSION --no-git-tag-version
 
       - run: npm config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
       - run: npm publish --access public --tag next
