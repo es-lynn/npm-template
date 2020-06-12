@@ -4,6 +4,7 @@ on:
     branches:
       - 'master'
       - 'develop'
+      - 'npm/next'
 
 jobs:
   compile:
@@ -76,7 +77,7 @@ jobs:
             message=${{env.VERSION_NAME}}"
 
   publish_next:
-    if: contains(github.ref, 'refs/heads/develop')
+    if:  contains(github.ref, 'refs/heads/npm/next')
     needs: [compile, test]
     runs-on: ubuntu-latest
     steps:
