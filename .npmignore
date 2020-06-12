@@ -1,5 +1,7 @@
-.github
+.github/
+coverage/
 tests/
+
 .eslintrc.json
 .prettierrc
 jest.config.js
