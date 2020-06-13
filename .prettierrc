@@ -5,5 +5,6 @@
   "semi": false,
   "tabs": false,
   "tabWidth": 2,
-  "trailingComma": "none"
+  "trailingComma": "none",
+  "arrowParens": "avoid"
 }
